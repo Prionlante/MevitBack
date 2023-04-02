@@ -1,0 +1,57 @@
+version: "3.6"
+
+services:
+
+  filesrv:
+    image: filesrv
+    build: ./filesrv
+    container_name: filesrv
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5100:5100
+
+  deform:
+    image: deform
+    build: ./deformsrv
+    container_name: deform
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5201:5201
+      
+  partsize:
+    image: partsize
+    build: ./partsizesrv
+    container_name: partsize
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5202:5202
+      
+  erythagg:
+    image: erythagg
+    build: ./erythaggsrv
+    container_name: erythagg
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5203:5203
+      
+  platagg:
+    image: platagg
+    build: ./plataggsrv
+    container_name: platagg
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5204:5204
+
+networks:
+  microservices:
+    driver: bridge

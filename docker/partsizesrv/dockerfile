@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR ./
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6 -y
+COPY . /
+EXPOSE 5202
+CMD ["./partsizesrv"]
