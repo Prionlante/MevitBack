@@ -18,7 +18,7 @@ If you are using docker, then you need to run compose file in the root directory
 ```sh
 docker compose up
 ```
-[![Docker hub page](https://hub.docker.com/repository/docker/serg228/med/general)](https://hub.docker.com/repository/docker/serg228/med/general)
+[![Docker hub page](https://hub.docker.com/r/serg228/med)](https://hub.docker.com/r/serg228/med)
 
 # How to use? #
 Once you have launched the application, go to
