@@ -4,10 +4,10 @@
 This repository stores the files of the backend part of the Mevit medical project. The microservices responsible for image processing were created based on the modules of the desktop C++ application.
 
 At the moment, the project has the following functionality:
-* Aggregation of erythrocytes cell
-* Cell deformability 
-* Particle size
-* Aggregation of platelet cell
+* Particle size -> 1.png
+* Cell deformability -> 2.png
+* Aggregation of erythrocytes cell -> 3.png
+* Aggregation of platelet cell -> 4.png
 
 # How to start app? #
 ## Custom ##
