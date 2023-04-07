@@ -1,0 +1,53 @@
+version: "3.6"
+
+services:
+
+  chat:
+    image: serg228/med:filesrv
+    container_name: filesrv
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5100:5100
+
+  deform:
+    image: serg228/med:deform
+    container_name: deform
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5201:5201
+
+  partsize:
+    image: serg228/med:partsize
+    container_name: partsize
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5202:5202
+
+  erythagg:
+    image: serg228/med:erythagg
+    container_name: erythagg
+    restart: always
+    networks:
+      - microservices
+    ports:
+      - 5203:5203
+
+  platagg:
+      image: serg228/med:platagg
+      container_name: platagg
+      restart: always
+      ports:
+        - 5204:5204
+      networks:
+      - microservices
+
+
+networks:
+  microservices:
+    driver: bridge
