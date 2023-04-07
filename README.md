@@ -26,3 +26,4 @@ Once you have launched the application, go to
 http://0.0.0.0:5100/docs
 ```
 On the page you can see description of the functional, the data that is accepted by input methods.
+The necessary files for tests are present in the /filsrv/origimg directory.
